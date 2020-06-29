@@ -40,6 +40,13 @@
         <h1>Welcome to DevOps TPS 7.53:pm</h1>
         
         <p th:text=" 'TPS Name:' + ${course} " />
+	      
+	<p>Date/Time: <span id="datetime"></span></p>
+
+	<script>
+	var dt = new Date();
+	document.getElementById("datetime").innerHTML = dt.toLocaleString();
+	</script>
       </div>
 
     </div><!-- /.container -->
